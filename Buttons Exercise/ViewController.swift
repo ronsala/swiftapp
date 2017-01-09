@@ -3,7 +3,7 @@
 //  Buttons Exercise
 //
 //  Created by RONALD SALA on 1/3/17.
-//  Copyright © 2017 RON SALA. All rights reserved.
+//  Copyright © 2017 RON SALA. All rights reserved..
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         tapCount = tapCount + 1
         
-        if tapCount >= 10 {
+        if tapCount >= 20 {
             coolLabel.text = "You tapped the button 10 times!"
         }
     }

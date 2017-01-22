@@ -8,37 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+internal class ViewController: UIViewController {
+    
     @IBOutlet weak var coolLabel: UILabel!
     
-    var tapCount = 0
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
     
     @IBAction func buttonTapped(_ sender: AnyObject) {
+       
+        coolLabel.text = "Anser: \(Double(text1.text!)! + Double(text2.text!)!)"
         
-        tapCount = tapCount + 1
+        print(text1.text!)
+        print(text2.text!)
         
-        if tapCount >= 20 {
-            coolLabel.text = "You tapped the button 10 times!"
-        }
-    }
-    
-    @IBAction func altButtonTapped(_ sender: Any) {
-        
-        coolLabel.text = "Buttons are cool!"
-
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+/*
+override func viewDidLoad() {
+        viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //New comment
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+override func didReceiveMemoryWarning() {
+        didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
+ */
 }
-

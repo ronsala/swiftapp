@@ -18,26 +18,31 @@ internal class ViewController: UIViewController {
     
     
     @IBAction func buttonTapped(_ sender: AnyObject) {
-       
-        coolLabel.text = "Anser: \(Double(text1.text!)! + Double(text2.text!)!)"
+        
+        let addition = true
+        
+        if addition {
+            coolLabel.text = "Anser: \(Double(text1.text!)! + Double(text2.text!)!)"
+        } else {
+            coolLabel.text = "Anser: \(Double(text1.text!)! - Double(text2.text!)!)"
+        }
         
         print(text1.text!)
         print(text2.text!)
         
     }
-
-/*
-override func viewDidLoad() {
+    /*
+    
+    override func viewDidLoad() {
         viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //New comment
         
     }
-
-override func didReceiveMemoryWarning() {
+    
+    override func didReceiveMemoryWarning() {
         didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
- */
+    */
 }
